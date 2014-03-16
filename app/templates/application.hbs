@@ -1,1 +1,7 @@
+{{#if session.userId}}
+  Sign Out
+{{else}}
+  {{#link-to 'sign_in'}}Sign In{{/link-to}}
+{{/if}}
+
 {{outlet}}

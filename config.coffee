@@ -28,6 +28,7 @@ exports.config =
           "vendor/ember/#{environment}/ember-data.js"
           "vendor/ember/#{environment}/ember-model.js"
           # Anything else that depends on Ember
+          'bower_components/ember-testing-httpRespond/httpRespond-1.1.js'
         ]
 
     stylesheets:
