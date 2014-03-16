@@ -7,11 +7,11 @@ module.exports = App.SignInController = Ember.ObjectController.extend
     sign_in: ->
       data =
         user: @getProperties('email', 'password')
-      debugger
+
       request = Ember.$.ajax
         url: '/auth'
         type: 'post'
-        data: data
+        data: JSON.stringify(data)
         dataType: 'json'
         headers:
           Accept: 'application/json'

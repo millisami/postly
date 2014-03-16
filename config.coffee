@@ -21,6 +21,7 @@ exports.config =
       order:
         before: [
           'bower_components/jquery/dist/jquery.js'
+          'bower_components/jquery-mockjax/jquery.mockjax.js'
           'bower_components/handlebars/handlebars.js'
           "vendor/ember/config/before.coffee"
           "vendor/ember/#{environment}/ember.js"
@@ -28,7 +29,7 @@ exports.config =
           "vendor/ember/#{environment}/ember-data.js"
           "vendor/ember/#{environment}/ember-model.js"
           # Anything else that depends on Ember
-          'bower_components/ember-testing-httpRespond/httpRespond-1.1.js'
+
         ]
 
     stylesheets:
